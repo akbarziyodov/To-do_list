@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do Apps</title>
+    <link rel="stylesheet" href="files/style.css">
+</head>
+<body>
+    <section class="wrapper">
+        <div class="title-section">
+            <div class="main-todo-input-wrap">
+                <h1 class="title">Todo List</h1>
+            </div>
+        <div class="form-section">
+            <div class="main-todo-input-wrap">
+                <div class="main-todo-input fl-wrap">
+                    <form class="addNew">
+                        <div class="main-todo-input-item">
+                            <input type="text" id="todo-list-item" name="Todo" placeholder="What will you do today?" required>
+                        </div>
+                        <input type="submit" class="add-items main-search-button" value="ADD">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-todo-input-wrap">
+                    <div class="main-todo-input fl-wrap todo-listing">
+                        <ul id="list-items">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="files/app.js"></script>
+<script>
+	var todo = new Todo();
+	todo.init();
+</script>
+</html>
